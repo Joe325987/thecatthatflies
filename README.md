@@ -29,15 +29,15 @@
 
 ###
 
+<p align="left">Hey there! 👋<br>My name's Aiyan, and I've created many projects! Some of them are listed below.<br><br>- A simple Minecraft server with portforwarding<br><br>- Custom Minecraft datapacks<br><br>- A mockup app that simulates a drone control panel<br><br>- The website that advertises my TI Plus CE cleanup/modding service<br><br>Curious about what we can do? Contact me on Discord or via email: aiyan041c10@outlook.com.au</p>
+
+###
+
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=thecatthatflies&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dark&locale=en&hide_border=false&order=1" height="150" alt="stats graph"  />
   <img src="https://streak-stats.demolab.com?user=thecatthatflies&locale=en&mode=daily&theme=dark&hide_border=false&border_radius=5&order=3" height="150" alt="streak graph"  />
   <img src="https://github-readme-stats.vercel.app/api/top-langs?username=thecatthatflies&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dark&hide_border=false&order=2" height="150" alt="languages graph"  />
 </div>
-
-###
-
-<p align="left">Hey there! 👋<br>My name's Aiyan, and I've created many projects! Some of them are listed below.<br><br>- A simple Minecraft server with portforwarding<br><br>- Custom Minecraft datapacks<br><br>- A mockup app that simulates a drone control panel<br><br>- The website that advertises my TI Plus CE cleanup/modding service<br><br>Curious about what we can do? Contact me on Discord or via email: aiyan041c10@outlook.com.au</p>
 
 ###
 
