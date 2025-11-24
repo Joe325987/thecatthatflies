@@ -1,262 +1,250 @@
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    }
-
-    body {
-      min-height: 100vh;
-      overflow: hidden;
-      color: #f7f7ff;
-    }
-
-   /* Fonts */
-   @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&family=Space+Grotesk:wght@300..700&display=swap');
-   
-   .space-grotesk-<uniquifier> {
-     font-family: "Space Grotesk", sans-serif;
-     font-optical-sizing: auto;
-     font-weight: <weight>;
-     font-style: normal;
-   }
-
-   .outfit-<uniquifier> {
-     font-family: "Outfit", sans-serif;
-     font-optical-sizing: auto;
-     font-weight: <weight>;
-     font-style: normal;
-   }
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&family=Space+Grotesk:wght@300..700&display=swap');
 
 
-    /* Blurred wallpaper */
-    .wallpaper {
-      position: fixed;
-      inset: 0;
-      background: url("./web-resources/background.png") center/cover no-repeat;
-      filter: blur(1.5px) brightness(1);
-      transform: scale(1.05); /* avoid edge blur cutoffs */
-      z-index: -2;
-    }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
 
-    /* Slight dark overlay for contrast */
-    .overlay {
-      position: fixed;
-      inset: 0;
-      background: radial-gradient(circle at top left, rgba(255,255,255,0.12), transparent 50%),
-                  radial-gradient(circle at bottom right, rgba(0,0,0,0.6), rgba(0,0,0,0.9));
-      z-index: -1;
-    }
+body {
+  min-height: 100vh;
+  overflow: hidden;
+  color: #f7f7ff;
+}
 
-    .desktop {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 32px 16px 96px;
-    }
 
-    /* Static “app” window */
-    .window {
-      width: min(900px, 100%);
-      max-height: 70vh;
-      background: rgba(10, 10, 25, 0.82);
-      backdrop-filter: blur(14px) saturate(160%);
-      border-radius: 18px;
-      border: 1px solid rgba(255, 255, 255, 0.12);
-      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.55);
-      display: flex;
-      flex-direction: column;
-      overflow: hidden;
-    }
 
-    .window-header {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      padding: 10px 14px;
-      background: linear-gradient(to right, rgba(255,255,255,0.08), rgba(255,255,255,0.02));
-      border-bottom: 1px solid rgba(255,255,255,0.1);
-    }
+/* Blurred wallpaper */
+.wallpaper {
+  position: fixed;
+  inset: 0;
+  background: url("./web-resources/background.png") center/cover no-repeat;
+  filter: blur(1.5px) brightness(1);
+  transform: scale(1.05); /* avoid edge blur cutoffs */
+  z-index: -2;
+}
 
-    .window-buttons {
-      display: flex;
-      gap: 6px;
-      margin-right: 8px;
-    }
+/* Slight dark overlay for contrast */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle at top left, rgba(255,255,255,0.12), transparent 50%),
+              radial-gradient(circle at bottom right, rgba(0,0,0,0.6), rgba(0,0,0,0.9));
+  z-index: -1;
+}
 
-    .dot {
-      width: 10px;
-      height: 10px;
-      border-radius: 999px;
-      background: #ff5f57;
-      box-shadow: 0 0 0 1px rgba(0,0,0,0.35);
-    }
-    .dot.yellow { background: #febc2e; }
-    .dot.green  { background: #28c840; }
+.desktop {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 16px 96px;
+}
 
-    .window-title {
-      font-size: 0.9rem;
-      opacity: 0.8;
-    }
+/* Static “app” window */
+.window {
+  width: min(900px, 100%);
+  max-height: 70vh;
+  background: rgba(10, 10, 25, 0.82);
+  backdrop-filter: blur(14px) saturate(160%);
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.55);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
 
-    .window-main {
-      padding: 18px 22px 22px;
-      overflow-y: auto;
-    }
+.window-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  background: linear-gradient(to right, rgba(255,255,255,0.08), rgba(255,255,255,0.02));
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
 
-    h1 {
-      font-size: 1.7rem;
-      margin-bottom: 4px;
-      font-family: space-grotesk;
-    }
+.window-buttons {
+  display: flex;
+  gap: 6px;
+  margin-right: 8px;
+}
 
-    h2 {
-      font-size: 1.2rem;
-      margin: 16px 0 8px;
-      font-family: space-grotesk;
-    }
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: #ff5f57;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.35);
+}
+.dot.yellow { background: #febc2e; }
+.dot.green  { background: #28c840; }
 
-    p {
-      font-size: 0.95rem;
-      line-height: 1.5;
-      font-family: outfit;
-      opacity: 0.9;
-      margin-bottom: 8px;
-    }
+.window-title {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
 
-    .tagline {
-      font-size: 0.9rem;
-      opacity: 0.85;
-      margin-bottom: 16px;
-    }
+.window-main {
+  padding: 18px 22px 22px;
+  overflow-y: auto;
+}
 
-    .pill-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-bottom: 10px;
-    }
+h1 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.7rem;
+  margin-bottom: 4px;
+  font-size: 1.4rem; 
+}
 
-    .pill {
-      padding: 4px 10px;
-      border-radius: 999px;
-      background: rgba(255, 255, 255, 0.08);
-      font-size: 0.8rem;
-      opacity: 0.9;
-    }
+h2 {
+  font-size: 1.2rem;
+  margin: 16px 0 8px;
+  font-family: space-grotesk;
+}
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-      gap: 12px;
-      margin-top: 10px;
-    }
+p {
+  font-family: "Outfit", sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  opacity: 0.9;
+  margin-bottom: 8px;
+}
 
-    .card {
-      padding: 10px 12px;
-      border-radius: 12px;
-      background: rgba(0, 0, 0, 0.35);
-      border: 1px solid rgba(255, 255, 255, 0.06);
-      font-size: 0.9rem;
-    }
+.tagline {
+  font-size: 0.9rem;
+  opacity: 0.85;
+  margin-bottom: 16px;
+}
 
-    .card-title {
-      font-weight: 600;
-      margin-bottom: 4px;
-      font-size: 0.96rem;
-    }
+.pill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 10px;
+}
 
-    a {
-      color: #9fd6ff;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
+.pill {
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  font-size: 0.8rem;
+  opacity: 0.9;
+}
 
-    /* App pages */
-    .app-page {
-      display: none;
-      animation: fadeIn 0.25s ease-out;
-    }
-    .app-page.active {
-      display: block;
-    }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 12px;
+  margin-top: 10px;
+}
 
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(4px); }
-      to   { opacity: 1; transform: translateY(0); }
-    }
+.card {
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  font-size: 0.9rem;
+}
 
-    /* Dock */
-    .dock {
-      position: fixed;
-      left: 50%;
-      bottom: 16px;
-      transform: translateX(-50%);
-      padding: 10px 12px;
-      border-radius: 16px;
-      background: rgba(5, 5, 18, 0.88);
-      backdrop-filter: blur(18px) saturate(180%);
-      border: 1px solid rgba(255, 255, 255, 0.22);
-      display: flex;
-      gap: 10px;
-      align-items: center;
-      z-index: 10;
-    }
+.card-title {
+  font-weight: 600;
+  margin-bottom: 4px;
+  font-size: 0.96rem;
+}
 
-    .dock-icon {
-      width: 46px;
-      height: 46px;
-      border-radius: 14px;
-      background: rgba(255, 255, 255, 0.09);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.6rem;
-      cursor: pointer;
-      transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease, border 0.15s ease;
-      border: 1px solid transparent;
-    }
+a {
+  color: #9fd6ff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
 
-    .dock-icon:hover {
-      transform: translateY(-4px) scale(1.05);
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.55);
-      background: rgba(255, 255, 255, 0.16);
-    }
+/* App pages */
+.app-page {
+  display: none;
+  animation: fadeIn 0.25s ease-out;
+}
+.app-page.active {
+  display: block;
+}
 
-    .dock-icon.active {
-      border-color: rgba(159, 214, 255, 0.9);
-      background: rgba(159, 214, 255, 0.14);
-    }
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
 
-    .dock-label {
-      position: absolute;
-      bottom: 60px;
-      padding: 4px 8px;
-      border-radius: 999px;
-      background: rgba(5, 5, 18, 0.9);
-      font-size: 0.7rem;
-      white-space: nowrap;
-      opacity: 0;
-      transform: translateY(6px);
-      pointer-events: none;
-      transition: opacity 0.15s ease, transform 0.15s ease;
-    }
+/* Dock */
+.dock {
+  position: fixed;
+  left: 50%;
+  bottom: 16px;
+  transform: translateX(-50%);
+  padding: 10px 12px;
+  border-radius: 16px;
+  background: rgba(5, 5, 18, 0.88);
+  backdrop-filter: blur(18px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  z-index: 10;
+}
 
-    .dock-icon:hover .dock-label {
-      opacity: 1;
-      transform: translateY(0);
-    }
+.dock-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.09);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease, border 0.15s ease;
+  border: 1px solid transparent;
+}
 
-    @media (max-width: 700px) {
-      .window {
-        max-height: 65vh;
-      }
-      .desktop {
-        padding: 16px 10px 88px;
-      }
-      h1 { font-size: 1.4rem; }
-    }
+.dock-icon:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.55);
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.dock-icon.active {
+  border-color: rgba(159, 214, 255, 0.9);
+  background: rgba(159, 214, 255, 0.14);
+}
+
+.dock-label {
+  position: absolute;
+  bottom: 60px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: rgba(5, 5, 18, 0.9);
+  font-size: 0.7rem;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateY(6px);
+  pointer-events: none;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+.dock-icon:hover .dock-label {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 700px) {
+  .window {
+    max-height: 65vh;
+  }
+  .desktop {
+    padding: 16px 10px 88px;
+  }
+}
