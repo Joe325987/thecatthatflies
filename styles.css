@@ -63,6 +63,7 @@ body {
   display: flex;
   align-items: center;
   gap: 8px;
+  font-family: "Outfit", sans-serif;
   padding: 10px 14px;
   background: linear-gradient(to right, rgba(255,255,255,0.08), rgba(255,255,255,0.02));
   border-bottom: 1px solid rgba(255,255,255,0.1);
@@ -166,9 +167,11 @@ p {
 a {
   color: #9fd6ff;
   text-decoration: none;
+  font-family: "Outfit", sans-serif;
 }
 a:hover {
   text-decoration: underline;
+  font-family: "Outfit", sans-serif;
 }
 
 /* App pages */
