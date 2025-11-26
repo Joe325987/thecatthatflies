@@ -59,7 +59,15 @@ body {
   overflow: hidden;
 }
 
-.window::-webkit-scrollbar {
+.window-main {
+  overflow-y: auto; 
+  -ms-overflow-style: none;  
+  scrollbar-width: none;
+}
+
+.window-main::-webkit-scrollbar {
+  width: 0;
+  height: 0;
   display: none;
 }
 
