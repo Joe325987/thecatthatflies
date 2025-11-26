@@ -59,6 +59,10 @@ body {
   overflow: hidden;
 }
 
+.window::-webkit-scrollbar {
+  display: none;
+}
+
 .window-header {
   display: flex;
   align-items: center;
