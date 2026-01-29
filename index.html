@@ -1,194 +1,74 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>aiyan chowdhury | portfolio</title>
+  <meta charset="utf-8" />
+  <title>aiyan chowdhury</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="/web-resources/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="styles.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <body>
-  <script defer src="https://cdn.jsdelivr.net/npm/quicklink@3.0.1/dist/quicklink.umd.js"></script>
-  <script>
-    window.addEventListener('load', () => {
-      quicklink.listen();
-    });
-  </script>
   <div class="wallpaper"></div>
   <div class="overlay"></div>
-
-  <div class="desktop">
-    <div class="window">
-      <div class="window-header">
-        <div class="window-buttons">
-          <div class="dot"></div>
-          <div class="dot yellow"></div>
-          <div class="dot green"></div>
+  <main class="page">
+    <section class="panel hovertilt">
+      <div class="left">
+        <div class="bio">
+          <img class="avatar" src="./web-resources/avatar.png" alt="">
+          <h1>aiyan chowdhury</h1>
+          <p class="subtitle">student • developer • modder</p>
+          <p class="description">
+            hi, i’m aiyan. i build websites, tools, and random projects for fun and for school.
+            i've built a variety of things in my time as a developer, and i'm always searching for oppurtunity to excel.
+            i'm most active on discord, so feel free to reach out!
+          </p>
         </div>
-        <div class="window-title" id="window-title">home • aiyan chowdhury</div>
-      </div>
 
-      <div class="window-main">
-        <!-- ABOUT APP -->
-        <section class="app-page active" id="app-about">
-          <h1>hi, i’m aiyan chowdhury 🫡</h1>
-          <p class="tagline">student • developer • modder</p>
+        <div class="projects">
+          <h2>projects</h2>
 
-          <div class="pill-row">
-            <span class="pill">website developer // html, css, js</span>
-            <span class="pill">robotics // python</span>
-            <span class="pill">backend // portforwarding, ssl, etc.</span>
-            <span class="pill">minecraft // plugins, mods, datapacks, servers</span>
+          <div class="project">
+            <span class="emoji">🚀</span>
+            <div>
+              <strong>quicklaunch</strong>
+              <p>customizable link opener built with python</p>
+            </div>
           </div>
 
-          <p>
-            i'm a student that's currently pursuing my passion of coding and designing websites just like this one.
-          </p>
-          <p>
-            currently im working on a website that can advertise one of my businesses at school.
-          </p>
-        </section>
-
-        <!-- PROJECTS APP -->
-        <section class="app-page" id="app-projects">
-          <h1>project portfolio</h1>
-          <p class="tagline">here's my full portfolio of projects ive created.</p>
-
-          <div class="grid">
-            <div class="card">
-              <div class="card-title"><a href=https://quicklaunch.aiyan.tech>🚀 QuickLaunch</a></div>
-              <p>an easy to use, simple and customizable link opener built with python3 and ttkbootstrap. for the people who want to get things done.</p>
-            </div>
-            <div class="card">
-              <div class="card-title"><a href=https://www.fllalluviums.com/pod-app>🛰 simulated drone app</a></div>
-              <p>a mocked up drone app for my first lego league team.</p>
-            </div>
-            <div class="card">
-              <div class="card-title"><a href=https://www.fllalluviums.com>🪨 first lego league team website</a></div>
-              <p>team website for our first lego league team.</p>
-            </div>
-            <div class="card">
-              <div class="card-title"><a href=./school/projects/chad/index.html>🇹🇩 school project - chad</a></div>
-              <p>a website that advertises and shows off the cool aspects of chad.</p>
-            </div>
-            <div class="card">
-              <div class="card-title"><a href=./school/projects/taiwan/index.html>🇹🇼 school project - taiwan</a></div>
-              <p>like the other one, only for taiwan.</p>
-            </div>
-            <div class="card">
-              <div class="card-title"><a href=./school/projects/homelessness/index.html>🏡 school project - homelessness</a></div>
-              <p>i researched and talked to experts to create a presentation the effects and consequences of homelessness.</p>
-            </div>
-            <div class="card">
-              <div class="card-title"><a href=./school/projects/tsunami/index.html>🌊 school project - tsunami mitigation</a></div>
-              <p>i explored the different aspects of japan's unfortunate streak of tsunamis, how to mitigate them, and how to prepare people to escape them.</p>
-            </div>
-            <div class="card">
-              <div class="card-title"><a href=./tools/projects/python-compiler/index.html>🐍 online powerful python ide [in progress]</a></div>
-              <p>a python ide that can do much more than most default broswer ones can, including running apps with ui.</p>
-            </div>
-            <div class="card">
-              <div class="card-title"><a href=./tools/projects/tier-list-creator/index.html>💯 tier list creator [in progress]</a></div>
-              <p>a simple in-browser offline tier list creator that can also export your tier list into an image, or shareable link.</p>
-            </div>
-            <div class="card">
-              <div class="card-title"><a href=./tools/projects/timeline-creator/index.html>⏰ timeline creator [in progress]</a></div>
-              <p>a timeline creator that's also offline and works in your browser, with the same export functionalities as the tier list creator.</p>
+          <div class="project">
+            <span class="emoji">🪨</span>
+            <div>
+              <strong>fll alluviums site</strong>
+              <p>team website for first lego league</p>
             </div>
           </div>
-        </section>
 
-        <!-- GALLERY APP -->
-        <section class="app-page" id="app-gallery">
-          <h1>visuals</h1>
-          <p class="tagline">i take photos too!</p>
-
-          <p>
-            i themed this site around some of my photos and other people's portfolio styles, and im pretty proud of how they turn up.
-          </p>
-          <p>this place is in progress btw sorry</p>
-          <!-- <div class="grid">
-            <div class="card">
-              <div class="card-title">🌅 Beach Wallpaper</div>
-              <p>Original photo → blurred and darkened to be a calm but dramatic desktop background.</p>
+          <div class="project">
+            <span class="emoji">🐍</span>
+            <div>
+              <strong>online python ide</strong>
+              <p>browser-based ide with ui support</p>
             </div>
-            <div class="card">
-              <div class="card-title">🧪 UI Experiments</div>
-              <p>Playing with glassmorphism, fake window chrome, and tiny micro-interactions on hover.</p>
-            </div>
-            <div class="card">
-              <div class="card-title">⭐️ Icon Packs</div>
-              <p>I found this Icon Pack online by <b>kmg design</b> on <b>Flaticon,</b> you can check it our <a href=https://www.flaticon.com/packs/ui-essential-5>here.</a></p>
-            </div>
-          </div> -->
-        </section>
-
-        <!-- CONTACT APP -->
-        <section class="app-page" id="app-contact">
-          <h1>contact</h1>
-          <p class="tagline">wanna chat? you can find me on different platforms but here are my preferred ones:</p>
-          <ul style="margin-left: 18px; margin-bottom: 10px; opacity: 0.95; font-size: 1rem;">
-            <li>email: <a href="mailto:aiyan041c10@outlook.com.au">aiyan041c10@outlook.com.au</a></li>
-            <li>discord: <a href="https://discord.com/users/1149437523785957508" target="_blank">_aiyan</a></li>
-            <li>all links: <a href="https://guns.lol/aiyan" target="_blank">guns.lol/aiyan</a></li>
-          </ul>
-
-          <p>
-            tell me if you want help working on something, or just want to chat with someone!
-          </p>
-        </section>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
 
-  <!-- Dock -->
-  <div class="dock">
-    <div class="dock-icon active" data-app="about">
-      <span>🏡</span>
-      <span class="dock-label">home</span>
-    </div>
-    <div class="dock-icon" data-app="projects">
-      <span>📂</span>
-      <span class="dock-label">project portfolio</span>
-    </div>
-    <div class="dock-icon" data-app="gallery">
-      <span>🖼️</span>
-      <span class="dock-label">gallery</span>
-    </div>
-    <div class="dock-icon" data-app="contact">
-      <span>✉️</span>
-      <span class="dock-label">contact</span>
-    </div>
-  </div>
+      <aside class="right">
+        <h2>profiles</h2>
 
+        <div class="links">
+          <a href="https://quicklaunch.aiyan.tech" target="_blank">🚀 quicklaunch</a>
+          <a href="https://www.fllalluviums.com" target="_blank">🪨 fll alluviums</a>
+          <a href="https://discord.com/users/1149437523785957508" target="_blank">💬 discord</a>
+          <a href="mailto:aiyan041c10@outlook.com.au">✉️ email</a>
+          <a href="https://guns.lol/aiyan" target="_blank">🔗 all links</a>
+        </div>
+      </aside>
+    </section>
+  </main>
+  <script type="module" src="script.js"></script>
   <script>
-    const icons = document.querySelectorAll('.dock-icon');
-    const pages = document.querySelectorAll('.app-page');
-    const title = document.getElementById('window-title');
-
-    const titles = {
-      about: 'home | aiyan chowdhury',
-      projects: 'project portfolio | aiyan chowdhury',
-      gallery: 'gallery | aiyan chowdhury',
-      contact: 'contact | aiyan chowdhury'
-    };
-
-    icons.forEach(icon => {
-      icon.addEventListener('click', () => {
-        const app = icon.dataset.app;
-
-        // switch active icon
-        icons.forEach(i => i.classList.remove('active'));
-        icon.classList.add('active');
-
-        // switch active page
-        pages.forEach(page => page.classList.remove('active'));
-        document.getElementById('app-' + app).classList.add('active');
-
-        // update title
-        title.textContent = titles[app] || 'Desktop Portfolio';
-      });
-    });
+    import { HoverTilt } from 'hover-tilt';
   </script>
 </body>
 </html>
