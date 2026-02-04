@@ -1,5 +1,24 @@
 {
+  "name": "thecatthatflies",
+  "version": "1.0.0",
+  "description": "portfolio and readme website",
+  "homepage": "https://github.com/thecatthatflies/thecatthatflies#readme",
+  "bugs": {
+    "url": "https://github.com/thecatthatflies/thecatthatflies/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thecatthatflies/thecatthatflies.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "scripts.js",
+  "scripts": {
+    "start": "python3 -m http.server 9090"
+  },
   "dependencies": {
-    "hover-tilt": "^1.0.0"
+    "eslint": "^9.39.2",
+    "prettier": "^3.8.1"
   }
 }
