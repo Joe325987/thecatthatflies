@@ -11,7 +11,8 @@
 <body>
   <div class="wallpaper"></div>
   <div class="overlay"></div>
-  <main class="page">
+    <main class="page">
+        <hover-tilt tilt-factor="1" scale-factor="1">
     <section class="panel hovertilt">
       <div class="left">
         <div class="bio">
@@ -66,7 +67,8 @@
         </div>
       </aside>
     </section>
-  </main>
+        </hover-tilt>
+    </main>
   <script type="module" src="script.js"></script>
   <script>
     import { HoverTilt } from 'hover-tilt';
