@@ -1,27 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
-:root {
-  --scale: clamp(0.75, 1vw + 0.5vb, 1.2);
-  --spacing-xs: clamp(6px, 0.8vw, 12px);
-  --spacing-sm: clamp(9px, 1vw, 14px);
-  --spacing-md: clamp(11px, 1.3vw, 20px);
-  --spacing-lg: clamp(14px, 1.6vw, 28px);
-  --spacing-xl: clamp(25px, 2vw, 35px);
-  --spacing-2xl: clamp(30px, 2.5vw, 40px);
-  --size-avatar-lg: clamp(64px, 8vw, 90px);
-  --size-avatar-sm: clamp(40px, 5vw, 56px);
-  --size-icon: clamp(24px, 3vw, 32px);
-  --size-status-dot: clamp(11px, 1.4vw, 16px);
-  --radius-sm: clamp(10px, 1.2vw, 16px);
-  --radius-md: clamp(12px, 1.4vw, 18px);
-  --radius-lg: clamp(20px, 2.3vw, 28px);
-  --font-size-h1: clamp(1.4rem, 1.8vw + 0.5rem, 2rem);
-  --font-size-h2: clamp(0.9rem, 1.1vw + 0.4rem, 1.3rem);
-  --font-size-body: clamp(0.85rem, 1vw + 0.3rem, 1rem);
-  --font-size-sm: clamp(0.72rem, 0.9vw + 0.2rem, 0.88rem);
-  --font-size-xs: clamp(0.68rem, 0.8vw + 0.15rem, 0.82rem);
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -79,72 +57,72 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: var(--spacing-lg);
-  overflow-y: auto;
+  padding: 28px;
 }
 
 .panel {
   width: min(1100px, 100%);
+  min-height: 495px;
   background: rgba(18, 18, 32, 0.35);
   backdrop-filter: blur(18px) saturate(160%);
-  border-radius: var(--radius-lg);
+  border-radius: 23px;
   border: 1px solid rgba(255, 255, 255, 0.14);
-  box-shadow: 0 clamp(20px, 3.5vw, 50px) clamp(40px, 7vw, 100px) rgba(0, 0, 0, 0.65);
+  box-shadow: 0 35px 70px rgba(0, 0, 0, 0.65);
   display: grid;
   grid-template-columns: 2.2fr 1fr;
-  gap: var(--spacing-xl);
-  padding: var(--spacing-2xl);
+  gap: 25px;
+  padding: 30px;
 }
 
 .left {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-xl);
+  gap: 25px;
 }
 
 .bio {
   max-width: 460px;
-  padding-bottom: var(--spacing-md);
+  padding-bottom: 20px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .avatar {
-  width: var(--size-avatar-lg);
-  height: var(--size-avatar-lg);
+  width: 78px;
+  height: 78px;
   border-radius: 999px;
   object-fit: cover;
   border: 2px solid rgba(255, 255, 255, 0.25);
-  margin-bottom: var(--spacing-md);
+  margin-bottom: 11px;
 }
 
 h1 {
   font-family: "Inter", sans-serif;
-  font-size: var(--font-size-h1);
+  font-size: 1.68rem;
   font-weight: 600;
 }
 
 .subtitle {
   opacity: 0.75;
-  margin-bottom: var(--spacing-md);
+  margin-bottom: 11px;
 }
 
 .description {
-  font-size: var(--font-size-body);
+  font-size: 0.93rem;
   line-height: 1.6;
   opacity: 0.9;
 }
 
 h2 {
   font-family: "Inter", sans-serif;
-  font-size: var(--font-size-h2);
-  margin-bottom: var(--spacing-md);
+  font-size: 1.06rem;
+  margin-bottom: 11px;
   opacity: 0.9;
 }
 
 .projects {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: var(--spacing-sm);
+  gap: 12px;
 }
 
 .projects h2 {
@@ -154,9 +132,9 @@ h2 {
 .project {
   display: flex;
   align-items: center;
-  gap: var(--spacing-md);
-  padding: var(--spacing-md) var(--spacing-sm);
-  border-radius: var(--radius-md);
+  gap: 11px;
+  padding: 11px 12px;
+  border-radius: 12px;
   background: rgba(255, 255, 255, 0.06);
   min-width: 0;
 }
@@ -175,7 +153,7 @@ h2 {
 }
 
 .project p {
-  font-size: var(--font-size-xs);
+  font-size: 0.75rem;
   opacity: 0.75;
   white-space: nowrap;
   overflow: hidden;
@@ -186,34 +164,34 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: var(--size-icon);
-  font-size: clamp(1rem, 1.3vw + 0.3rem, 1.5rem);
+  width: 28px;
+  font-size: 1.24rem;
   flex-shrink: 0;
 }
 
 .right {
   display: flex;
   flex-direction: column;
-  padding-left: var(--spacing-xl);
+  padding-left: 25px;
   border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .links {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-sm);
-  padding-bottom: var(--spacing-md);
+  gap: 9px;
+  padding-bottom: 20px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .links a {
-  padding: var(--spacing-md) var(--spacing-sm);
-  border-radius: var(--radius-md);
+  padding: 11px 12px;
+  border-radius: 12px;
   background: rgba(255, 255, 255, 0.06);
   border: 1px solid rgba(255, 255, 255, 0.1);
   color: #f7f7ff;
   text-decoration: none;
-  font-size: var(--font-size-sm);
+  font-size: 0.84rem;
   transition:
     background 0.15s ease,
     transform 0.15s ease;
@@ -221,18 +199,18 @@ h2 {
 
 .links a:hover {
   background: rgba(255, 255, 255, 0.16);
-  transform: translateY(clamp(-1px, -0.2vw, -3px));
+  transform: translateY(-2px);
 }
 
 #discord-profile {
-  margin-top: clamp(24px, 3.5vw, 48px);
-  padding: var(--spacing-sm);
-  border-radius: var(--radius-md);
+  margin-top: 36px;
+  padding: 14px;
+  border-radius: 12px;
   background: rgba(255, 255, 255, 0.06);
   border: 1px solid rgba(255, 255, 255, 0.1);
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-xs);
+  gap: 8px;
 }
 
 .discord-avatar-wrapper {
@@ -241,8 +219,8 @@ h2 {
 }
 
 #discord-profile #avatar {
-  width: var(--size-avatar-sm);
-  height: var(--size-avatar-sm);
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid rgba(255, 255, 255, 0.2);
@@ -250,10 +228,10 @@ h2 {
 
 .status-dot {
   position: absolute;
-  bottom: clamp(1px, 0.15vw, 3px);
-  right: clamp(1px, 0.15vw, 3px);
-  width: var(--size-status-dot);
-  height: var(--size-status-dot);
+  bottom: 2px;
+  right: 2px;
+  width: 14px;
+  height: 14px;
   border-radius: 50%;
   border: 2px solid rgba(18, 18, 32, 0.9);
   background: #747f8d;
@@ -277,18 +255,18 @@ h2 {
 
 #discord-profile #name {
   font-family: "Inter", sans-serif;
-  font-size: var(--font-size-h2);
+  font-size: 1rem;
   font-weight: 600;
 }
 
 #discord-profile #status {
-  font-size: var(--font-size-sm);
+  font-size: 0.8rem;
   opacity: 0.75;
   text-transform: capitalize;
 }
 
 #discord-profile #activity {
-  font-size: var(--font-size-xs);
+  font-size: 0.78rem;
   opacity: 0.65;
   font-style: italic;
 }
