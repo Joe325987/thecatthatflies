@@ -13,6 +13,10 @@ fetch("https://api.lanyard.rest/v1/users/" + userId)
         document.getElementById("name").textContent = user.display_name
         document.getElementById("status").textContent = status
 
+        // Add status dot class
+        const statusDot = document.getElementById("status-dot")
+        statusDot.className = "status-dot " + status
+
         const customActivity = activities.find(a => a.type === 4)
         if (customActivity) {
             document.getElementById("activity").textContent = customActivity.state

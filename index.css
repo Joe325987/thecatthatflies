@@ -61,9 +61,9 @@ body {
 }
 
 .panel {
-  width: min(975px, 100%);
+  width: min(1100px, 100%);
   min-height: 495px;
-  background: rgba(18, 18, 32, 0.78);
+  background: rgba(18, 18, 32, 0.35);
   backdrop-filter: blur(18px) saturate(160%);
   border-radius: 23px;
   border: 1px solid rgba(255, 255, 255, 0.14);
@@ -82,6 +82,8 @@ body {
 
 .bio {
   max-width: 460px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .avatar {
@@ -170,18 +172,23 @@ h2 {
 .right {
   display: flex;
   flex-direction: column;
+  padding-left: 25px;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .links {
   display: flex;
   flex-direction: column;
   gap: 9px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .links a {
   padding: 11px 12px;
   border-radius: 12px;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   color: #f7f7ff;
   text-decoration: none;
   font-size: 0.84rem;
@@ -196,7 +203,7 @@ h2 {
 }
 
 #discord-profile {
-  margin-top: 18px;
+  margin-top: 36px;
   padding: 14px;
   border-radius: 12px;
   background: rgba(255, 255, 255, 0.06);
@@ -206,12 +213,44 @@ h2 {
   gap: 8px;
 }
 
+.discord-avatar-wrapper {
+  position: relative;
+  width: fit-content;
+}
+
 #discord-profile #avatar {
   width: 48px;
   height: 48px;
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.status-dot {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid rgba(18, 18, 32, 0.9);
+  background: #747f8d;
+}
+
+.status-dot.online {
+  background: #3ba55c;
+}
+
+.status-dot.idle {
+  background: #faa61a;
+}
+
+.status-dot.dnd {
+  background: #ed4245;
+}
+
+.status-dot.offline {
+  background: #747f8d;
 }
 
 #discord-profile #name {
