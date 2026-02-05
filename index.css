@@ -139,8 +139,9 @@ h2 {
 .project {
   display: flex;
   align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   gap: 11px;
-  padding: 11px 12px;
+  padding: 14px 12px;
   border-radius: 12px;
   background: rgba(255, 255, 255, 0.06);
   min-width: 0;
@@ -210,21 +211,29 @@ h2 {
 }
 
 #discord-profile {
-  margin-top: 36px;
+  margin-top: 24px;
   padding: 14px;
   border-radius: 12px;
   background: rgba(255, 255, 255, 0.06);
   border: 1px solid rgba(255, 255, 255, 0.1);
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  width: 240px;
-  min-height: 140px;
+  gap: 12px;
+  width: 300px;
+  min-height: 240px;
+  position: relative;
+}
+
+.discord-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 .discord-avatar-wrapper {
   position: relative;
   width: fit-content;
+  flex-shrink: 0;
 }
 
 #discord-profile #avatar {
@@ -258,8 +267,10 @@ h2 {
   background: #ed4245;
 }
 
-.status-dot.offline {
-  background: #747f8d;
+.discord-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
 }
 
 #discord-profile #name {
@@ -274,13 +285,90 @@ h2 {
   text-transform: capitalize;
 }
 
-#discord-profile #activity {
-  font-size: 0.78rem;
-  opacity: 0.65;
-  font-style: italic;
+#discord-profile #custom-status {
+  font-size: 0.85rem;
+  opacity: 0.7;
+  padding-left: 2px;
 }
 
-/* Languages & Technologies Section */
+#discord-profile #custom-status:empty {
+  display: none;
+}
+
+#activity-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  min-height: 72px;
+  box-sizing: border-box;
+}
+
+#activity-section.hidden {
+  display: none;
+}
+
+#activity-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 6px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+#activity-icon:not([src]),
+#activity-icon[src=""] {
+  display: none;
+}
+
+#activity-icon-placeholder {
+  width: 48px;
+  height: 48px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.08);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 1.2rem;
+  opacity: 0.5;
+}
+
+.activity-details {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+#activity-name {
+  font-family: "Inter", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#activity-details {
+  font-size: 0.75rem;
+  opacity: 0.75;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#activity-state {
+  font-size: 0.75rem;
+  opacity: 0.65;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .skills-section {
   display: flex;
   flex-direction: column;
@@ -326,7 +414,7 @@ h2 {
   left: 50%;
   transform: translateX(-50%);
   font-size: 0.7rem;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(105, 105, 105, 0.368);
   padding: 3px 8px;
   border-radius: 4px;
   white-space: nowrap;
@@ -392,7 +480,7 @@ h2 {
   color: #f7df1e;
 }
 
-/* Mobile Styles */
+/* mobile state */
 @media (max-width: 800px) {
   body {
     overflow: auto;
