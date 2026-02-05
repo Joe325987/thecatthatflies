@@ -1,32 +1,41 @@
-<br clear="both">
+# 👋 Hey, I'm Aiyan
 
-<h1 align="center">this is me, aiyan</h1>
+## About
+I’m Aiyan, a student developer focused on building practical tools, clean websites, and small experimental projects. This README summarizes the main things I’ve built. You can check out more at my portfolio:
 
-###
+Portfolio: [https://aiyan.tech](https://aiyan.tech)
 
-<div align="center">
-  <img src="https://skillicons.dev/icons?i=py" height="60" alt="python logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="60" alt="html5 logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="60" alt="css logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="60" alt="javascript logo"  />
-</div>
+---
 
-###
+## Projects
 
-<br clear="both">
+### unbound labs
+[https://unboundlabs.dev](https://unboundlabs.dev)
 
-<div align="center">
-  <a href="https://discord.com/users/1149437523785957508" target="_blank">
-    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/discord/default.svg" width="37" height="25" alt="discord logo"  />
-  </a>
-  <a href="https://youtube.com/@thecatthatflies" target="_blank">
-    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/youtube/default.svg" width="37" height="25" alt="youtube logo"  />
-  </a>
-</div>
+I'm the CEO and founder @ unbound labs, an experiment-based company that creates projects based on ideas. Built for the free web.
 
-###
+- unbound (browser concept)  
+- uncensored (proxy, tools, games)  
 
-<p align="left">Hey there! 👋<br>My name's Aiyan, and I've created many projects! Some of them are listed below.<br><br>- A simple Minecraft server with portforwarding<br><br>- Custom Minecraft datapacks<br><br>- A mockup app that simulates a drone control panel<br><br>Curious about what we can do? Contact me on Discord or via email: aiyan041c10@outlook.com.au</p>
+---
+
+### QuickLaunch
+[https://quicklaunch.aiyan.tech](https://quicklaunch.aiyan.tech)
+
+QuickLaunch is a lightweight desktop launcher for keeping frequently used links and tools in one place. It’s designed to be simple, local, and fast.
+
+- JSON-based configuration  
+- No accounts or cloud services  
+- Minimal GUI
+
+---
+
+### FLL Alluviums
+[https://fllalluviums.com](https://fllalluviums.com)
+
+This is the official website for my First Lego League team (Team #46300). It documents our robot development, innovation project (SEALIS), and team progress during the season.
+
+---
+
+## Contact
+Contact details are available on my [website](https://aiyan.tech).
