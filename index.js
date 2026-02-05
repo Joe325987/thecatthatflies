@@ -74,3 +74,5 @@ fetch("https://api.lanyard.rest/v1/users/" + userId)
             document.getElementById("activity-state").textContent = ""
         }
     })
+
+import { SpeedInsights } from "@vercel/speed-insights/next"
