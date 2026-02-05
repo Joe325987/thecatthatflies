@@ -294,6 +294,9 @@ h2 {
   top: 78px;
   left: 14px;
   right: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 #discord-profile #custom-status:empty {
