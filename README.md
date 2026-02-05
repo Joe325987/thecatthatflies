@@ -9,6 +9,8 @@ Portfolio: [https://aiyan.tech](https://aiyan.tech)
 
 ## Projects
 
+---
+
 ### unbound labs
 [https://unboundlabs.dev](https://unboundlabs.dev)
 
